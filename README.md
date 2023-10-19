@@ -52,3 +52,4 @@ img_path)
 - side (Browse Demos, Buy Now, Export Section)
 - bottom-right (return top page btn, open chat btn)
 
+19. Creo 'button' e 'card' come partials
