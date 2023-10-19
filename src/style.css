@@ -60,13 +60,41 @@ header .top-bar {
 }
 
 header .top-bar .container {
-  padding: 0 10px 0 30px;
+  padding-left: 30px;
 }
 
 header .top-bar .phone-numbers span {
   margin-right: 10px;
 }
+/* 
+header .top-bar .social-icons .social-icon-box {
+  width: 25px;
+  height: 25px;
+} */
 
-header .top-bar .social-icons {
+/* header .top-bar .social-icons {
   column-gap: 15px;
+} */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  column-gap: 10px;
+}
+
+nav ul li {
+  display: flex;
+}
+
+nav ul li a {
+  align-self: self-start;
+  width: 25px;
+  color: var(--text-header-primary);
+  cursor: pointer;
+}
+
+nav ul li a:visited {
+  color: var(--text-header-primary);
 }
