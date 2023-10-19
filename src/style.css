@@ -1,0 +1,72 @@
+:root {
+  --bg-header-primary: #3D3D3D;
+  --text-header-primary: #FFFFFF;
+  --text-header-secondary: #FFFFFF59;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/************ 
+  UTILITIES 
+************/
+
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-it-center {
+  align-items: center;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+
+
+.container {
+  max-width: 1460px;
+  margin: 0 auto;
+}
+
+/************ 
+   HEADER 
+************/
+header {
+  font-size: 14px;
+  color: var(--text-header-primary);
+}
+
+header .top-bar {
+  line-height: 35px;
+  height: 39px;
+  background-color: var(--bg-header-primary);
+}
+
+header .top-bar .container {
+  padding: 0 10px 0 30px;
+}
+
+header .top-bar .phone-numbers span {
+  margin-right: 10px;
+}
+
+header .top-bar .social-icons {
+  column-gap: 15px;
+}
