@@ -1,0 +1,31 @@
+header {
+  font-size: 14px;
+  color: var(--text-header-primary);
+  .top-bar{
+    line-height: 35px;
+    .phone-numbers a.tel-num {
+      color: var(--text-header-primary);
+    }
+  }
+  .bottom-bar {
+    .center {
+      line-height: 52px;
+      nav.menu ul li {
+        &.active {
+          font-weight: 600;
+        }
+        a {
+          color: #000000;
+          font-family: 'Nunito', sans-serif;
+        }
+      }
+    }
+    .right {
+      text-align: right;
+      a {
+        color: var(--green-primary);
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@use './vars' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1460px;
+  margin: 0 auto;
+}
+
+.btn_ctm {
+  display: inline-block;
+  padding: 16px 43px;
+  border: none;
+  border-radius: 25px;
+  font-size: 13px;
+  color: var(--text-header-primary);
+  cursor: pointer;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  column-gap: 10px;
+}
+
+nav ul li {
+  display: flex;
+}
+
+nav ul li a {
+  align-self: self-start; // <--- cosa fa???
+  width: 25px;
+  color: var(--text-header-primary);
+  cursor: pointer;
+}
+
+nav ul li a:visited {
+  color: var(--text-header-primary);
+}
