@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 a {
@@ -61,6 +61,10 @@ a {
 
 .align-self-center {
   align-self: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 /** DIVIDER **/
@@ -108,15 +112,26 @@ a {
   border-radius: 25px;
   font-size: 13px;
   color: var(--text-header-primary);
+  cursor: pointer;
 }
 
 .green {
   background-image: linear-gradient(90deg, #97E15F 7%, #00D9A6 100%);
 }
 
+.black {
+  background-image: linear-gradient(90deg, var(--bg-black-secondary) 7%, var(--bg-black-primary) 100%);
+}
+
 .text-green {
   color: var(--green-primary);
 }
+
+
+.card {
+  border-radius: 10px;
+}
+
 
 /************ 
    HEADER 
@@ -266,6 +281,11 @@ main section:nth-child(odd) {
   background-color: var(--bg-main-primary);
 }
 
+
+
+/************ 
+   WE ARE
+************/
 main .we-are {
   height: 950px;
 }
@@ -276,15 +296,50 @@ main .we-are .container {
   position: relative;
 }
 
+main .we-are .text-box {
+  width: 50%;
+}
+
 main .we-are .special-title {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
   letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+main .we-are .title {
+  font-size: 67px;
+  margin-bottom: 20px;
+}
+
+main .we-are p {
+  display: inline-block;
+}
+
+main .we-are .para {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  margin-top: 50px;
+  margin-bottom: 60px;
 }
 
 main .we-are p.bg {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+main .we-are .social-links {
+  margin-bottom: 150px;
+}
+
+main .we-are .social-links ul li {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 85px;
+  padding-right: 5px;
 }
 
 main .we-are .img-box {
@@ -295,8 +350,41 @@ main .we-are .img-box {
 }
 
 main img {
-  height: 103%;
+  height: 105%;
 }
+
+
+/************ 
+   SERVICES
+************/
+main .services {
+  height: fit-content; /* da togliere perché flex */ 
+  margin: 50px 0;
+}
+main .services .container {
+  max-width: 98vw;
+}
+main .services .text-box {
+  width: 45%;
+}
+
+main .services .cards-wrapper {
+  width: 55%;
+}
+
+main .services .cards-wrapper .row .col {
+  flex-basis: 50%;
+  padding: 20px;
+}
+
+main .services .cards-wrapper .card.service {
+  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+  padding: 20px;
+  min-height: 300px; /* da togliere quando riempi con contenuto */
+}
+
+
+
 
 
 
