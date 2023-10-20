@@ -1,23 +1,23 @@
 <script>
 import Hello from './components/Hello.vue';
 
+import Header from './components/Header.vue';
+
 export default {
   name: 'App',
   components: {
-    Hello
+    Hello,
+    Header
   }
 }
 </script>
 
 <template>
-  <div>
-    <h1>APP</h1>
 
-    <Hello />
+  <Header />
 
-  </div>
 </template>
 
-<style>
-
+<style lang="scss">
+@use './components/scss/main.scss' as *;
 </style>
