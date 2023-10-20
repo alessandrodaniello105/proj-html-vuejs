@@ -107,7 +107,7 @@ a {
 
 .btn_ctm {
   display: inline-block;
-  padding: 17px 46px;
+  padding: 16px 43px;
   border: none;
   border-radius: 25px;
   font-size: 13px;
@@ -361,26 +361,31 @@ main .services {
   height: fit-content; /* da togliere perché flex */ 
   margin: 50px 0;
 }
-main .services .container {
-  max-width: 98vw;
-}
+
 main .services .text-box {
-  width: 45%;
+  width: 38%;
+  font-size: 37px;
+}
+
+main .services .text-box .btn_ctm {
+  margin-top: 30px;
 }
 
 main .services .cards-wrapper {
-  width: 55%;
+  width: 62%;
 }
 
 main .services .cards-wrapper .row .col {
   flex-basis: 50%;
-  padding: 20px;
 }
 
 main .services .cards-wrapper .card.service {
+  margin: 30px 0;
+  margin-left: 40px;
+
   box-shadow: 0 0 20px rgba(0, 0, 0, .2);
   padding: 20px;
-  min-height: 300px; /* da togliere quando riempi con contenuto */
+  min-height: 350px; /* da togliere quando riempi con contenuto */
 }
 
 
