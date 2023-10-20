@@ -83,6 +83,10 @@ a {
   width: 48px;
 }
 
+.main::before {
+  background-image: linear-gradient(90deg, #97E15F 7%, #00D9A6 100%);
+  color: linear-gradient(90deg, #97E15F 7%, #00D9A6 100%);
+}
 
 
 .debug {
@@ -108,6 +112,10 @@ a {
 
 .green {
   background-image: linear-gradient(90deg, #97E15F 7%, #00D9A6 100%);
+}
+
+.text-green {
+  color: var(--green-primary);
 }
 
 /************ 
@@ -219,6 +227,10 @@ header .bottom-bar nav.menu ul li {
   display: inline-block;
 }
 
+header .bottom-bar nav.menu ul li.active {
+  font-weight: 600;
+}
+
 header .bottom-bar nav.menu ul li a {
   color: #000000;
   font-family: 'Nunito', sans-serif;
@@ -238,11 +250,52 @@ header .bottom-bar .right a {
 }
 
 
+
+
+
+
+
 /************ 
    MAIN
 ************/
-main {
+main section {
+  height: 200px;
+}
+
+main section:nth-child(odd) {
   background-color: var(--bg-main-primary);
+}
+
+main .we-are {
+  height: 950px;
+}
+
+main .we-are .container {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+main .we-are .special-title {
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+main .we-are p.bg {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main .we-are .img-box {
+  height: 950px;
+  position: absolute;
+  top: -40px;
+  right: -250px;
+}
+
+main img {
+  height: 103%;
 }
 
 
