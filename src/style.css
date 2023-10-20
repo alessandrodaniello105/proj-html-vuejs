@@ -294,21 +294,24 @@ main .we-are .container {
   height: 100%;
   overflow: hidden;
   position: relative;
+  max-width: 1600px;
 }
 
 main .we-are .text-box {
+  margin-left: 100px;
   width: 50%;
+  padding: 20px;
 }
 
 main .we-are .special-title {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
   letter-spacing: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 main .we-are .title {
-  font-size: 67px;
+  font-size: 63px;
   margin-bottom: 20px;
 }
 
@@ -321,6 +324,7 @@ main .we-are .para {
   font-weight: 300;
   line-height: 25px;
   margin-top: 50px;
+  padding-right: 30px;
   margin-bottom: 60px;
 }
 
@@ -359,10 +363,10 @@ main img {
 ************/
 main .services {
   height: fit-content; /* da togliere perché flex */ 
-  margin: 50px 0;
+  margin: 200px 0;
 }
 
-main .services .text-box {
+main .services .container > .text-box {
   width: 38%;
   font-size: 37px;
 }
@@ -380,14 +384,22 @@ main .services .cards-wrapper .row .col {
 }
 
 main .services .cards-wrapper .card.service {
+  min-height: 350px; /* da togliere quando riempi con contenuto */
   margin: 30px 0;
   margin-left: 40px;
-
+  padding: 40px;
   box-shadow: 0 0 20px rgba(0, 0, 0, .2);
-  padding: 20px;
-  min-height: 350px; /* da togliere quando riempi con contenuto */
 }
 
+main .services .cards-wrapper .card.service .img-box {
+  width: 75px;
+}
+
+
+main .services .cards-wrapper .card.service .text-box p {
+  display: inline-block;
+
+}
 
 
 
