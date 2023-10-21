@@ -165,18 +165,21 @@ main .we-are .text-box {
   margin-left: 100px;
   width: 50%;
   padding: 20px;
+  z-index: 2;
+
 }
 
 main .we-are .special-title {
   font-size: 17px;
   font-weight: bold;
-  letter-spacing: 5px;
+  letter-spacing: 6px;
   margin-bottom: 15px;
 }
 
 main .we-are .title {
   font-size: 63px;
   margin-bottom: 20px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 main .we-are p {
