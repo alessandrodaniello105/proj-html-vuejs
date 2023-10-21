@@ -2,6 +2,7 @@
 import headerMenu from '../data/headerMenu';
 import Button from './partials/Button.vue';
 import {store} from '../data/store'
+import socials from '../data/socials';
 
 export default {
   name: 'Header',
@@ -11,7 +12,8 @@ export default {
   data() {
     return {
       headerMenu,
-      store
+      store,
+      socials
     }
   },
   methods: {
@@ -50,9 +52,13 @@ export default {
         <nav class="social-nav social-icons d-flex">
 
           <ul>
-            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+
+            <!-- <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li> -->
+
+            <li v-show="social.icon" v-for="social in socials" :key="social.name"><a :href="social.href"><i class="fa-brands" :class="social.icon"></i></a></li>
+
           </ul>
                
         </nav>
@@ -82,7 +88,7 @@ export default {
 
         <div class="right">
           
-          <Button :text="'PURCHASE'" :green="'green'" />
+          <Button :text="'PURCHASE'" :type="'green'" />
 
           <a href="#">
             <i class="fa-solid fa-magnifying-glass"></i>
