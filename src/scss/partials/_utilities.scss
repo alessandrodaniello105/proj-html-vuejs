@@ -59,12 +59,17 @@
 }
 
 .main::before {
-  background-image: linear-gradient(90deg, #97E15F 7%, #00D9A6 100%);
-  color: linear-gradient(90deg, #97E15F 7%, #00D9A6 100%);
+  background-image: $gradient-primary;
+  color: $gradient-primary;
 }
 
 .green {
-  background-image: linear-gradient(90deg, #97E15F 7%, #00D9A6 100%);
+  background-image: $gradient-primary;
+}
+
+
+.green.special-title {
+  background-image: linear-gradient(180deg, #00D9A6 7%, #97E15F 100%);
 }
 
 .black {
