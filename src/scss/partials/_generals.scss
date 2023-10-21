@@ -15,8 +15,12 @@ a {
 }
 
 .container {
-  max-width: 1460px;
+  max-width: 1800px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .btn_ctm {
