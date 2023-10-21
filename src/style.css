@@ -228,46 +228,41 @@ main img {
 /************ 
    SERVICES
 ************/
-main .services {
-  height: fit-content; /* da togliere perché flex */ 
-  margin: 200px 0;
-}
 
-main .services .container > .text-box {
+
+/* main .services .container > .text-box {
   width: 38%;
   font-size: 37px;
 }
 
 main .services .text-box .btn_ctm {
   margin-top: 30px;
-}
+} */
 
-main .services .cards-wrapper {
+/* main .services .cards-wrapper {
   width: 62%;
-}
+} */
 
-main .services .cards-wrapper .row .col {
+/* main .services .cards-wrapper .row .col {
   flex-basis: 50%;
-}
+} */
 
-main .services .cards-wrapper .card.service {
-  min-height: 350px; /* da togliere quando riempi con contenuto */
+/* main .services .cards-wrapper .card.service {
   margin: 30px 0;
   margin-left: 40px;
   padding: 40px;
   box-shadow: 0 0 20px rgba(0, 0, 0, .2);
-}
+} */
 
-main .services .cards-wrapper .card.service .img-box {
+/* main .services .cards-wrapper .card.service .img-box {
   width: 75px;
-}
+} */
 
-
+/* 
 main .services .cards-wrapper .card.service .text-box p {
   display: inline-block;
-
 }
-
+ */
 
 
 
