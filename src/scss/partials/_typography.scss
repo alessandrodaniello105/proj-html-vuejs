@@ -1,3 +1,5 @@
+@use './vars' as *;
+
 header {
   font-size: 14px;
   color: var(--text-header-primary);
@@ -26,6 +28,32 @@ header {
         color: var(--green-primary);
         font-size: 16px;
       }
+    }
+  }
+}
+
+main {
+  .special-title {
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 6px;
+  }
+  .title {
+    font-size: 63px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  a {
+    color: $bg-black-primary;
+  }
+  .para {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+  }
+  .we-are {
+    ul li {
+      font-size: 14px;
+      font-weight: bold;
     }
   }
 }
