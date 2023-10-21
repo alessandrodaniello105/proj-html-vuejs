@@ -1,6 +1,37 @@
 <script>
+import headerMenu from '../data/headerMenu';
+import Button from './partials/Button.vue';
+import {store} from '../data/store'
+
 export default {
-  name: 'Header'
+  name: 'Header',
+  components: {
+    Button
+  },
+  data() {
+    return {
+      headerMenu,
+      store
+    }
+  },
+  methods: {
+    getActive(item) {
+      store.isActive = {};
+      store.isActive = item;
+      if (store.isActive == item) {
+        item.isActive = true;
+      } else {
+        item.isActive = false;
+      }
+    },
+    getUpperCase(text) {
+      return text.toUpperCase();
+    }
+  
+  },
+  mounted() {
+    store.isActive = headerMenu[0]
+  }
 }
 </script>
 
@@ -42,19 +73,16 @@ export default {
         <div class="center align-self-center">
           <nav class="menu ">
             <ul>
-              <li class="active"><a href="#">HOME</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">SERVICES</a></li>
-              <li><a href="#">SHOWCASE</a></li>
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">CONTACT</a></li>
+              <li @click="getActive(link)" v-for="link in headerMenu" :key="link.text" :class="{'active': store.isActive == link && link.isActive}">
+                <a href="#">{{ getUpperCase(link.text) }}</a>
+              </li>
             </ul>
           </nav>
         </div>
 
         <div class="right">
           
-          <div class="btn_ctm green">PURCHASE</div>
+          <Button :text="'PURCHASE'" :green="'green'" />
 
           <a href="#">
             <i class="fa-solid fa-magnifying-glass"></i>
