@@ -1,13 +1,13 @@
 <script>
-import Hello from './components/Hello.vue';
-
 import Header from './components/Header.vue';
+import Main from './components/Main.vue';
+
 
 export default {
   name: 'App',
   components: {
-    Hello,
-    Header
+    Header,
+    Main
   }
 }
 </script>
@@ -16,8 +16,10 @@ export default {
 
   <Header />
 
+  <Main />
+
 </template>
 
 <style lang="scss">
-@use './components/scss/main.scss' as *;
+@use './scss/main.scss' as *;
 </style>
