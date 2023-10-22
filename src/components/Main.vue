@@ -13,6 +13,7 @@ import Missions from './Missions.vue';
 import Showcase from './Showcase.vue';
 import ClientOverview from './ClientOverview.vue';
 import Blog from './Blog.vue';
+import Contact from './Contact.vue';
 
 export default {
   name: 'Main',
@@ -23,7 +24,8 @@ export default {
     Missions,
     Showcase,
     ClientOverview,
-    Blog
+    Blog,
+    Contact
   },
   data() {
     return {
@@ -85,9 +87,11 @@ export default {
 
       
     <!-- CONTACT -->
-    <div class="contact">CONTACT</div>
+    <div class="contact">
+      <Contact />
+    </div>
     <!-- /CONTACT -->
-    
+
     </section>
     <!-- /BLOG -->
 
