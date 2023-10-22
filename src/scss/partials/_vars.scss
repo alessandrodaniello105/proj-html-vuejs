@@ -3,9 +3,14 @@ $bg-main-primary: #F9F9F9;
 
 $text-header-primary: #FFFFFF;
 $text-header-secondary: #FFFFFF59;
+
 $text-footer-primary: #AAAAAA;
 $text-footer-secondary: #555555;
 $text-footer-tertiary: #444444;
+
+$text-white-secondary: #FFFFFFCF;
+$text-white-tertiary: #FFFFFFC9;
+$text-white-quar: #FFFFFFCC;
 
 $green-primary: #00D9A6;
 
@@ -15,4 +20,19 @@ $btn-text-primary: #FFFFFFB3;
 $bg-black-primary: #000000E6;
 $bg-black-secondary: #333333;
 
+
+
+
 $gradient-primary: linear-gradient(90deg, #97E15F 7%, #00D9A6 100%);
+
+$gradient-secondary: linear-gradient(-90deg, #97E15F 7%, #00D9A6 100%);
+
+$gradient-tertiary: linear-gradient(90deg, $bg-black-secondary 15%, $bg-black-primary 100%);
+
+
+
+$box-shadow-primary: 0 0 20px rgba($color: #424242, $alpha: .3);
+
+$box-shadow-secondary: 0 0 20px rgba($color: #424242, $alpha: .6);
+
+$box-shadow-green: 5px 5px 20px rgba($color: $green-primary, $alpha: .3);
