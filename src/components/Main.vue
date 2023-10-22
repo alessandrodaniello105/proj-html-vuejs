@@ -11,7 +11,7 @@ import About from './partials/About.vue';
 import Services from './partials/Services.vue';
 import Missions from './Missions.vue';
 import Showcase from './Showcase.vue';
-
+import ClientOverview from './ClientOverview.vue';
 
 export default {
   name: 'Main',
@@ -20,7 +20,8 @@ export default {
     About,
     Services,
     Missions,
-    Showcase
+    Showcase,
+    ClientOverview
   },
   data() {
     return {
@@ -72,6 +73,10 @@ export default {
     </section>
     <!-- /SHOWCASE -->
 
+    <section>
+      <ClientOverview :bgUrl="'/src/assets/img/four-businesspeople-in-a-boardroom-with-paperwork-PC4V8H4.jpg'" />
+    </section>
+
     <!-- BLOG -->
     <section class="blog">BLOG</section>
     <!-- /BLOG -->
@@ -95,7 +100,6 @@ main {
     height: 105%;
   }
   section {
-    min-height: 200px;
     &:nth-child(odd) {
       background-color: var(--bg-main-primary);
     }

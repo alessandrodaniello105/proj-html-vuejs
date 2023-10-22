@@ -45,6 +45,7 @@ export default {
   margin-left: 40px;
   padding: 40px;
   box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+  border-radius: 10px;
   .img-box {
     width: 75px;
   }
