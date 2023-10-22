@@ -51,7 +51,7 @@ export default {
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .we-are {
   height: 950px;
   p {
@@ -74,6 +74,7 @@ export default {
       width: 50%;
       padding: 20px;
       margin-left: 100px;
+      margin-top: 100px;
       .special-title {
         margin-bottom: 15px;
       }
