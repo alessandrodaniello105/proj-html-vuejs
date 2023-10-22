@@ -68,32 +68,34 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.container {
-  padding: 215px 0 50px;
-  .top {
-    display: flex;
-    position: relative;
-    .title-box,
-    .paragraph-box {
-      padding: 20px;
+.showcase {
+  .container {
+    padding: 215px 0 50px;
+    .top {
+      display: flex;
+      position: relative;
+      .title-box,
+      .paragraph-box {
+        padding: 20px;
+      }
+      .paragraph-box {
+        height: fit-content;
+        flex-basis: 100%;
+        align-self: flex-end;
+        margin-bottom: 30px;
+      }
     }
-    .paragraph-box {
-      height: fit-content;
-      flex-basis: 100%;
-      align-self: flex-end;
-      margin-bottom: 30px;
-    }
-  }
-
-  .bottom {
-    text-align: center;
-
-    .boxes-wrapper {
-      width: 100%;
-      flex-wrap: wrap;
-    }
-    .btn_ctm {
-      margin: 115px 0 176px;
+  
+    .bottom {
+      text-align: center;
+  
+      .boxes-wrapper {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      .btn_ctm {
+        margin: 115px 0 176px;
+      }
     }
   }
 }
