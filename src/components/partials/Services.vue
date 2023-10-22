@@ -57,6 +57,7 @@ export default {
 
 <style lang="scss" scoped>
 .container {
+  max-width: 1600px;
   & > .text-box {
     width: 38%;
     font-size: 37px;
