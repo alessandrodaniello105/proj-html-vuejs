@@ -24,8 +24,13 @@ export default {
     </div>
 
     <div class="text-box">
+
       <h3>{{ card.title }}</h3>
-      <div class="special-text"><p>{{ card.text }}</p></div>
+
+      <div class="special-text">
+        <p>{{ card.text }}</p>
+      </div>
+
     </div>
 
   </div>
@@ -40,15 +45,28 @@ export default {
   overflow: hidden;
 }
 
-.card.service {
-  margin: 30px 0;
-  margin-left: 40px;
-  padding: 40px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
-  border-radius: 10px;
-  .img-box {
-    width: 75px;
+.col > {
+  .card.service {
+    width: 95%;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px auto;
+    margin-left: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    .img-box {
+      width: 75px;
+      margin-bottom: 20px;
+    }
+    .text-box {
+      h3 {
+        font-size: 26px;
+        font-weight: 500;
+      }
+      .special-text {
+        margin: 15px 0 20px;
+      }
+    }
+  
   }
-
 }
 </style>
