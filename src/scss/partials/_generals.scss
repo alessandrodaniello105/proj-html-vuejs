@@ -37,6 +37,14 @@ a {
   cursor: pointer;
 }
 
+.btn_ctm.green {
+  box-shadow: $box-shadow-green;
+}
+
+.btn_ctm.black {
+  box-shadow: $box-shadow-secondary;
+}
+
 .card {
   border-radius: 5px;
   overflow: hidden;
