@@ -47,7 +47,7 @@ export default {
 </template>
 
 <style lang="scss">
-.container {
+.blog > .container {
   text-align: center;
   overflow: hidden;
   width: 100%;
@@ -61,15 +61,16 @@ export default {
       margin: 0 auto;
     }
   }
+  .posts-wrapper {
+    width: 1800px;
+  }
+  
+  .btn_ctm {
+    margin: 50px 0 200px;
+  }
 }
 
-.posts-wrapper {
-  width: 1800px;
-}
 
-.btn_ctm {
-  margin: 50px 0 200px;
-}
 
 //  .posts-wrapper {
 //    .container {
