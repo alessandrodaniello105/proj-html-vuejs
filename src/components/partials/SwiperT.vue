@@ -51,7 +51,7 @@ export default {
     :modules="modules"
     class="mySwiper"
   >
-    <swiper-slide v-for="element in list" :key="element.id" > <Box :src="`/src/assets/img/${element.image}`" :date="element.date" :author="element.author" :title="element.title" :name="element.name" :tags="element.tags" /> </swiper-slide>
+    <swiper-slide v-for="element in list" :key="element.id" > <Box :src="store.getImagePath(element.image)" :date="element.date" :author="element.author" :title="element.title" :name="element.name" :tags="element.tags" /> </swiper-slide>
   </swiper>
   
 </template>
