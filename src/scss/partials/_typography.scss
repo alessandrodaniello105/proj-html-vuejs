@@ -81,3 +81,42 @@ p.quote::before {
     color: $text-footer-primary;
   }
 }
+
+footer{
+  a {
+  color: $text-footer-secondary;
+  &:visited {
+    color: $text-footer-secondary;
+  }
+  }
+  .top-bar {
+    .box {
+      .title {
+        font-family: 'Quicksand', sans-serif;
+        color: $text-footer-tertiary;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+      nav a,
+      p {
+        font-size: 16px;
+        color: $text-footer-secondary;
+        line-height: 22px;
+      }
+    }
+  }
+  .bottom-bar {
+    .container {
+      span {
+        font-size: 14px;
+      }
+      a {
+        color: $text-footer-primary;
+        &:visited {
+        color: $text-footer-primary;
+        }
+      } 
+    }
+  }
+}
