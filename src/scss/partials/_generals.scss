@@ -33,7 +33,7 @@ a {
   border: none;
   border-radius: 25px;
   font-size: 13px;
-  color: var(--text-header-primary);
+  color: $text-header-primary;
   cursor: pointer;
 }
 
@@ -65,10 +65,10 @@ nav ul li {
 nav ul li a {
   align-self: self-start; // <--- cosa fa???
   width: 25px;
-  color: var(--text-header-primary);
+  color: $text-header-primary;
   cursor: pointer;
 }
 
 nav ul li a:visited {
-  color: var(--text-header-primary);
+  color: $text-header-primary;
 }

@@ -73,9 +73,9 @@
 }
 
 .black {
-  background-image: linear-gradient(90deg, var(--bg-black-secondary) 7%, var(--bg-black-primary) 100%);
+  background-image: linear-gradient(90deg, $bg-black-secondary 7%, $bg-black-primary 100%);
 }
 
 .text-green {
-  color: var(--green-primary);
+  color: $green-primary;
 }

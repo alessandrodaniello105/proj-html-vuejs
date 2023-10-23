@@ -2,11 +2,11 @@
 
 header {
   font-size: 14px;
-  color: var(--text-header-primary);
+  color: $text-header-primary;
   .top-bar{
     line-height: 35px;
     .phone-numbers a.tel-num {
-      color: var(--text-header-primary);
+      color: $text-header-primary;
     }
   }
   .bottom-bar {
@@ -25,7 +25,7 @@ header {
     .right {
       text-align: right;
       a {
-        color: var(--green-primary);
+        color: $green-primary;
         font-size: 16px;
       }
     }
