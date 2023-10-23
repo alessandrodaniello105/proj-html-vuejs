@@ -14,6 +14,7 @@ import Showcase from './Showcase.vue';
 import ClientOverview from './ClientOverview.vue';
 import Blog from './Blog.vue';
 import Contact from './Contact.vue';
+import Customers from './Customers.vue';
 
 export default {
   name: 'Main',
@@ -25,7 +26,8 @@ export default {
     Showcase,
     ClientOverview,
     Blog,
-    Contact
+    Contact,
+    Customers
   },
   data() {
     return {
@@ -96,7 +98,9 @@ export default {
     <!-- /BLOG -->
 
     <!-- CLIENTS -->
-    <section class="clients">CLIENTS</section>
+    <section class="customers">
+      <Customers />
+    </section>
     <!-- /CLIENTS -->
 
     
@@ -107,8 +111,10 @@ export default {
 @use '../scss/partials/vars' as *;
 
 main {
-  img {
-    height: 105%;
+  .we-are {
+    img {
+      height: 105%;
+    }
   }
   section {
     &:nth-child(odd) {
