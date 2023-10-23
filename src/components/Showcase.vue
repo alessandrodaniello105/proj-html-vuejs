@@ -92,6 +92,7 @@ export default {
       .boxes-wrapper {
         width: 100%;
         flex-wrap: wrap;
+        padding: 0 1%;
       }
       .btn_ctm {
         margin: 115px 0 176px;
