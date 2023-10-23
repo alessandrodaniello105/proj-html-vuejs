@@ -47,6 +47,8 @@ export default {
 .row {
   margin: 40px;
   .col {
+    position: relative;
+    bottom: -200px;
     min-height: 200px;
     flex-basis: 50%;
     padding: 17px;
