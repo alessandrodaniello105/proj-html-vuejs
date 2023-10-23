@@ -21,6 +21,7 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  padding: 0 1%;
 }
 
 .container > .row {
@@ -64,11 +65,20 @@ nav ul li {
 
 nav ul li a {
   align-self: self-start; // <--- cosa fa???
-  width: 25px;
+  width: fit-content;
   color: $text-header-primary;
   cursor: pointer;
 }
 
 nav ul li a:visited {
   color: $text-header-primary;
+}
+
+nav.social-icons {
+  ul li {
+    width: fit-content;
+    a {
+      width: 25px;
+    }
+  }
 }
