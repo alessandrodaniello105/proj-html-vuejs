@@ -104,23 +104,27 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../scss/partials/vars' as *;
+
 
 header{
   
   .top-bar {
     height: 39px;
-    background-color: var(--bg-header-primary);
+    background-color: $bg-header-primary;
     .container {
-      padding-left: 30px;
-      .phone-numbers a {
-        margin-right: 10px;
+      .phone-numbers {
+        margin-left: 42px;
+        a {
+          margin-right: 10px;
+        }
       }
     }
   }
 
   .bottom-bar {
     height: 104px;
-    background-color: var(--text-header-primary);
+    background-color: $text-header-primary;
     .container {
       height: 100%;
 
