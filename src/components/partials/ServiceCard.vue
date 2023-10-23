@@ -51,7 +51,6 @@ export default {
     border-radius: 10px;
     padding: 40px;
     margin: 20px auto;
-    margin-left: 40px;
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
     .img-box {
       width: 75px;
