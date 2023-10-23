@@ -66,7 +66,7 @@ export default {
   }
   
   .btn_ctm {
-    margin: 50px 0 200px;
+    margin: 50px 0;
   }
 }
 
