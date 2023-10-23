@@ -51,7 +51,7 @@ export default {
 
 .container {
   
-  padding: 280px 0;
+  margin: 280px 0;
 
   .img-box {
     position: relative;
