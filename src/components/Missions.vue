@@ -50,13 +50,14 @@ export default {
 @use '../scss/partials/vars' as *;
 
 .container {
-  
-  margin: 280px 0;
+  min-width: 1460px;
 
   .img-box {
     position: relative;
     width: 650px;
     height: 500px;
+    left: 10%;
+    margin: 280px 0;
   
     z-index: 2;
     .green {
@@ -91,8 +92,9 @@ export default {
   }
   
   .text-box {
-    width: 43%;
     float: right;
+    width: 43%;
+    margin: 250px 0 150px;
   .divider {
     margin: 10px 0 20px;
   }

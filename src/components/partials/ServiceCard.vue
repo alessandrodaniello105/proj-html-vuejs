@@ -20,7 +20,7 @@ export default {
   <div class="card service">
 
     <div class="img-box">
-      <img :src="`/src/assets/img/${card.src}`" :alt="`${card.title} icon`">
+      <p><i :class="card.src" class="zmdi zmdi-hc-4x"></i></p>
     </div>
 
     <div class="text-box">
@@ -37,7 +37,9 @@ export default {
 
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@use '../../scss/partials/vars' as *;
+
 .special-text p {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -52,9 +54,23 @@ export default {
     padding: 40px;
     margin: 20px auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    background-color: $bg-main-primary;
+    transition: scale .5s;
+    &:hover {
+      background-image: $gradient-services;
+      color: $text-header-primary;
+      scale: 1.05;
+      .img-box {
+        color: $text-header-primary
+      }
+    }
     .img-box {
       width: 75px;
       margin-bottom: 20px;
+      color: $text-footer-tertiary;
+      .icon {
+        fill: black;
+      }
     }
     .text-box {
       h3 {

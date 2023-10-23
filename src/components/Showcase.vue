@@ -3,6 +3,8 @@ import Divider from './partials/Divider.vue';
 import Button from './partials/Button.vue';
 import Box from './partials/Box.vue';
 import projects from '../data/projects';
+import { store } from '../data/store';
+
 
 
 export default {
@@ -17,12 +19,13 @@ export default {
   },
   data() {
     return {
-      projects
+      projects,
+      store
     }
   },
   methods: {
     getImagePath(path) {
-      return new URL(path, import.meta.url).href;
+      return new URL(`../assets/img/${path}`, import.meta.url).href;
     }
   }
 }
@@ -55,7 +58,7 @@ export default {
     <div class="bottom align-self-center">
       <div class="boxes-wrapper d-flex">
 
-        <Box v-for="project in projects" :key="project.name" :src="`/src/assets/img/${project.image}`" />
+        <Box v-for="project in projects" :key="project.name" :src="store.getImagePath(project.image)" :name="project.name" :tags="project.tags" />
 
       </div>
       
@@ -67,13 +70,15 @@ export default {
 
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
+@use '../scss/partials/vars' as *;
 .showcase {
   .container {
     padding: 215px 0 50px;
     .top {
       display: flex;
       position: relative;
+
       .title-box,
       .paragraph-box {
         padding: 20px;
@@ -88,11 +93,55 @@ export default {
   
     .bottom {
       text-align: center;
-  
       .boxes-wrapper {
         width: 100%;
         flex-wrap: wrap;
         padding: 0 1%;
+        .col {
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          overflow: hidden;
+          transition: all .5s;
+          border-radius: 10px;
+          overflow: hidden;
+          padding: 3px;
+          
+          .back {
+            position: absolute;
+            width: 99%;
+            aspect-ratio: 1 / 1;
+            background-image: $gradient-services;
+            padding: 3px;
+            border-radius: 10px;
+            height: 98.6%;
+            .text-con {
+              position: absolute;
+              bottom: 10px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              margin-bottom: 30px;
+              p:first-child {
+                font-size: 20px;
+              }
+              p:last-child {
+                font-size: 14px;
+              }
+            }
+          }
+          &:hover {
+            scale: 1.1;
+            z-index: 2;
+            .back {
+              bottom: 3px;
+              color: white;
+              overflow: hidden;
+              
+            }
+          }
+        }
       }
       .btn_ctm {
         margin: 115px 0 176px;

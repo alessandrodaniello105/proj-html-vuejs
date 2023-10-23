@@ -57,7 +57,7 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  max-width: 1600px;
+  max-width: 1700px;
   & > .text-box {
     width: 38%;
     font-size: 37px;
@@ -68,6 +68,7 @@ export default {
   }
   .cards-wrapper {
     width: 62%;
+    padding: 2%;
     .row .col {
       flex-basis: 50%;
       

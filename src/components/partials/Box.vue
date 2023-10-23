@@ -22,14 +22,21 @@ export default {
 <template>
 <div class="col">
   
+
+
   <div class="card box">
+
     <img :src="src" alt="">
+
+    <div class="back" v-show="name">
+      <div class="text-con">
+        <p>{{ name }}</p>
+        <p>{{ tags }}</p>
+      </div>
+    </div>
+
   </div>
 
-  <div class="back" v-show="name">
-    <p>{{ name }}</p>
-    <p>{{ tags }}</p>
-  </div>
 
   <div class="post-info" v-show="date">
     <div class="card post">
@@ -43,7 +50,7 @@ export default {
 </div>
 </template>
 
-<style lang="scss" >
+<style lang="scss" scoped>
 @use '../../scss/partials/vars' as *;
 
 
@@ -94,17 +101,18 @@ export default {
 .col {
   flex-basis: 25%;
   position: relative;
-  padding: 3px 3px;
+
+
   .card {
     width: 100%;
-  }
-  .box {
-    width: 100%;
     height: 100%;
+  }
+
+  .box {
     img {
       width: 100%;
-      height: 100%;
       object-fit: cover;
+      border-radius: 10px;
     }
 
   }

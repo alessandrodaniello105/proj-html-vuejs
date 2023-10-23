@@ -1,6 +1,7 @@
 export default [
  {
   name: 'Facebook',
+  text: 'Facebook',
   icon: 'fa-facebook-f',
   href: '#'
  },
