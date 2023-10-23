@@ -111,14 +111,14 @@ export default {
 @use '../scss/partials/vars' as *;
 
 main {
+  section {
+    &:nth-child(odd) {
+      background-color: $bg-main-primary;
+    }
+  }
   .we-are {
     img {
       height: 105%;
-    }
-  }
-  section {
-    &:nth-child(odd) {
-      background-color: var(--bg-main-primary);
     }
   }
   .services {
